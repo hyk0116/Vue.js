@@ -15,7 +15,9 @@
            <button type="button" v-model="yellow" v-on:click="show" v-bind:disabaled="run">보이기</button>
             <button type="button" v-model="yellow" v-on:clcik="bind" v-bind:disabled="!run">감추기 </button>
         </sapn> 
-       <div id="yellow" v-show="yellow"></div>
+        <sapn v-bind:class ="{yellow:value}"> </sapn>
+        <div id="yellow" v-show="yellow"></div>
+  
     </div>
     <script type="text/javascript"> 
        var app=new Vue({
