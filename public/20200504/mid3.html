@@ -1,0 +1,31 @@
+<html>
+<head>
+  <meta charset="utf-8" />
+  <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+  <style>
+    
+  </style>
+</head>
+<body>
+    <input text="" v-model="text">
+        <button type="button" v-onclicK="show">생성</button>
+       
+        <div id="app">
+        <span v-for="i in size">
+            {{ i }}
+        </span>
+       
+    </div>
+    <script type="text/javascript"> 
+       var app=new Vue({
+        el:'#app',
+        data:{
+            size:Math.floor(Math.random()*i)
+        }
+
+       })
+    </script>
+
+
+</body>    
+</html>
